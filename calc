@@ -1,0 +1,60 @@
+#include <stdio.h>
+int main()
+{
+    int a, b, calc, sum, sub, div, multiply, sq, cube, SI, p2, p, r, t;
+    printf("Select task from the following:\n 1.Sum\n 2.Subtraction\n 3.multiplication\n 4.division\n 5.Square of the number\n 6.Cube of the number\n 7.Simple Interest\n 8.Square of the product of two numbers");
+    scanf("%d",&calc);
+    switch (calc)
+    {
+    case 1:
+        printf("Input two numbers=");
+        scanf("%d%d",&a,&b);
+        sum = a + b;
+        printf("%d is the sum", sum);
+        break;
+    case 2:
+        printf("Input two numbers=");
+        scanf("%d%d",&a,&b);
+        sub = a - b;
+        printf("%d is the subtraction of the numbers.", sub);
+        break;
+    case 3:
+        printf("Input two numbers=");
+        scanf("%d%d",&a,&b);
+        multiply = a * b;
+        printf("%d is the multiplication of the two numbers.",multiply);
+        break;
+    case 4:
+        printf("Input two numbers=");
+        scanf("%d%d",&a,&b);
+        div = a / b;
+        printf("%d is the division of the two numbers.",div);
+        break;
+    case 5:
+        printf("Input a number=");
+        scanf("%d",&a);
+        sq = a * a;
+        printf("%d is the square of the number.", a);
+        break;
+    case 6:
+        printf("Input a number=");
+        scanf("%d",&a);
+        cube = a * a * a;
+        printf("%d is the cube of the following number.", a);
+        break;
+    case 7:
+        printf("Input the principle amt p=\n Input rate of interest r=\n Input time t=");
+        scanf("%f%f%f",&p,&r,&t);
+        SI = p * r * t / 100;
+        printf("%f is the simple interest.", SI);
+        break;
+    case 8:
+        printf("Input two numbers=");
+        scanf("%d%d",&a,&b);
+        p2 = a * a * b * b;
+        printf("%d is the product's square.", p2);
+        break;
+    default:
+        printf("Invalid Input!");
+    }
+}
