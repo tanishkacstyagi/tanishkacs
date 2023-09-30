@@ -7,7 +7,7 @@ int main()
     switch (calc)
     {
     case 1:
-        printf("Input two numbers=");
+        printf("Input two no=");
         scanf("%d%d",&a,&b);
         sum = a + b;
         printf("%d is the sum", sum);
